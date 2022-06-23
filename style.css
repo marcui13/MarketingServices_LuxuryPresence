@@ -1,0 +1,416 @@
+/* GENERAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a :hover {
+    color: black;
+}
+
+#hero {
+    position: relative;
+}
+
+/* GRID */
+
+.page {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr;
+}
+
+/* HEADER */
+
+header {
+    grid-column: 1/2;
+    height: 82px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 15vh;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.icon-miami {
+    height: 55px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION */
+
+section {
+    width: 100%;
+    text-align: center;
+}
+
+.section-flex {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SERVICES */
+
+.section-services {
+    height: 90vh;
+    color: white;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section-services-video-mp4 {
+    width: 100%;
+    height: 115vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.section-overlay, .section-overlay2 {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #303952;
+    opacity: .9;
+    mix-blend-mode: overlay;
+    z-index: 1;
+}
+
+.section-services-content {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.title-services {
+    color: #3F51B5;
+    font-size: 5rem;
+}
+
+.div-services-content1, .div-services-content2 {
+    width: 50vh;
+    position: relative;
+    z-index: 2;
+}
+
+.img-services {
+    margin-left: -5vh;
+}
+
+/* VISION */
+
+.section-vision {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(26, 58, 128);
+    color: white;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section-vision-text {
+    color: gold;
+}
+
+.div-vision1 {
+    width: 50vh;
+    color: #3F51B5;
+    margin-right: 7vh;
+}
+
+.div-vision2 {
+    width: 75vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* margin-left: -2vh; */
+}
+
+.title-vision {
+    color: white;
+    font-size: 6rem;
+}
+
+h3 {
+    font-weight: 800;
+}
+
+.background {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/viadriado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* ABOUT US */
+
+.section-aboutus {
+    height: 100vh;
+    background-image: url(assets/pexels-leah-kelley-9293249.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-aboutus-img {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-aboutus-text {
+    width: 650px;
+}
+
+.div-aboutus {
+    background-color: white;
+    padding: 5vh;
+}
+
+.title-aboutus {
+    font-size: 5rem;
+}
+
+/* TEAM */
+
+.section-team {
+    height: 80vh;
+    background-image: url(assets/pexels-ovan-57690.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-direction: row;
+}
+
+.section-team1, .section-team2 {
+    width: 50%;
+    height: 100%;
+}
+
+.section-team1 {
+    background-color: rgb(0, 0, 0);
+}
+
+.section-team-img {
+    width: 75vh;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: baseline;
+    filter: grayscale(75%);
+}
+
+.section-text-team-cont {
+    background-color: white;
+    opacity: 0.75;
+    height: 75vh;
+    width: 75%;
+}
+
+.section-team-text {
+    width: 350px;
+}
+
+.section-overlay2 {
+    position: relative;
+}
+
+.title-team {
+    font-size: 4rem;
+}
+
+/* CAROUSEL */
+
+.title-carousel {
+    font-size: 2rem;
+}
+
+/* TESMONIALS */
+
+.section-testimo {
+    height: 65vh;
+    background-image: url(assets/pexels-monica-silvestre-1034597.jpg);
+    filter: grayscale(0.35);
+    background-size: 100%;
+    background-position-y: -200px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.section-testimonials-text {
+    width: 500px;
+}
+
+.div-testim {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-testim {
+    padding: 2vh;
+    background-color: white;
+}
+
+.testim-text {
+    font-family: 'Joan', sans-serif;
+}
+
+h6 {
+    font-weight: bolder;
+}
+
+.cita {
+    height: 5vh;
+}
+
+.title-test {
+    font-size: 3.5rem;
+}
+
+
+/* CONTACT */
+
+.section-contact {
+    background-image: url(assets/pexels-todd-trapani-3790058.jpg);    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section-contact-text {
+    width: 350px;
+    color: black;
+}
+
+.contact-form {
+    margin: 2vh;
+    padding: 2vh;
+    width: 500px;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.div-contact {
+    background-color: white;
+    padding: 2vh;
+}
+
+.button-apply {
+    background-color: black;
+    padding: 1vh;
+    border: solid black 1px;
+}
+
+.button-apply:hover{
+    background-color: white;
+}
+
+h5:hover{
+    color: black;
+}
+
+h5 {
+    font-weight: bolder;
+    color: white;
+}
+
+/* BACK TO TOP */
+
+button {
+    border: transparent;
+}
+
+.div-backtotop {
+    width: 100%;
+}
+
+.backtotop {
+    width: 100%;
+    background-color: #4762ad;
+    position: sticky;
+}
+
+/* CHAT TELEGRAM */
+
+.btn-telegram, .icon-telegram {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.socialMedia {
+    flex-direction: row;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.icon {
+    height: 5vh;
+    margin-left: 1vh;
+}
+
+.txt-footer {
+    margin: 0;
+}
